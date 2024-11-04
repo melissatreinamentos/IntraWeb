@@ -1,0 +1,16 @@
+object IWServerController: TIWServerController
+  OldCreateOrder = False
+  AppName = 'MyApp'
+  Description = 'My IntraWeb Application'
+  DisplayName = 'IntraWeb Application'
+  Port = 8888
+  Version = '16.0.0'
+  SessionOptions.SessionTimeout = 10
+  OnNewSession = IWServerControllerBaseNewSession
+  Left = 367
+  Top = 314
+  Height = 310
+  HorizontalOffset = 0
+  VerticalOffset = 0
+  Width = 342
+end

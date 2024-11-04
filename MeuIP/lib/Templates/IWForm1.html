@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ptb-br">
+<head>
+    <!-- general meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- site specific tags -->
+    <title>Meu IP</title>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="row">
+        <b>Meu IP:</b>
+        {%IWIP%}
+    </div>
+    <br>
+    <div class="row">
+        <button type="button" class="btn btn-danger btn-block btn-flat" onclick="meuip();"><span style="font-size: 20px">Meu
+                IP</span>
+        </button>
+    </div>
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", 'https://api.ipify.org/?format=text');
+        xmlhttp.send();
+        xmlhttp.onload = function (e) {
+            document.getElementById('IWIP').value = xmlhttp.response;
+        }
+    </script>
+
+    <script>
+       function meuip() {    
+        ajaxCall("IP", "data=" + document.getElementById('IWIP').value);
+       }
+    </script>
+</body>
+</html>
