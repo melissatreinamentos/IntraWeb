@@ -1,9 +1,0 @@
-object IWUserSession: TIWUserSession
-  OldCreateOrder = False
-  Left = 192
-  Top = 160
-  Height = 150
-  HorizontalOffset = 0
-  VerticalOffset = 0
-  Width = 215
-end
