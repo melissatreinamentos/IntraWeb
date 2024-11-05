@@ -1,0 +1,52 @@
+object IWForm1: TIWForm1
+  Left = 0
+  Height = 400
+  Top = 0
+  Width = 555
+  RenderInvisibleControls = True
+  AllowPageAccess = True
+  ConnectionMode = cmAny
+  OnCreate = IWForm1Create
+  Background.Fixed = False
+  LayoutMgr = IWTemplateProcessorHTML1
+  HandleTabs = False
+  LeftToRight = True
+  LockUntilLoaded = True
+  LockOnSubmit = True
+  ShowHint = True
+  object BTNIP: TIWButton
+    Left = 26
+    Height = 30
+    Top = 64
+    Width = 120
+    AlignWithMargins = False
+    Caption = 'Meu IP'
+    Color = -2147483633
+    FriendlyName = 'BTNIP'
+  end
+  object IWIP: TIWEdit
+    Left = 26
+    Height = 23
+    Top = 36
+    Width = 200
+    StyleRenderOptions.RenderBorder = False
+    AlignWithMargins = False
+    FriendlyName = 'IWIP'
+    SubmitOnAsyncEvent = True
+  end
+  object IWLabel1: TIWLabel
+    Left = 26
+    Height = 17
+    Top = 19
+    Width = 49
+    AlignWithMargins = False
+    HasTabOrder = False
+    FriendlyName = 'IWLabel1'
+    Caption = 'MEU IP'
+  end
+  object IWTemplateProcessorHTML1: TIWTemplateProcessorHTML
+    TagType = ttIntraWeb
+    Left = 440
+    Top = 328
+  end
+end
